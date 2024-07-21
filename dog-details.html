@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Of Paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>House Of Paws</h1>
+        <nav>
+            <a href="index.html">Home |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="aboutus.html">AboutUs |</a>
+           
+        </nav>
+    </header>
+    <main>
+        <div id=dog-details>
+        <h2 id="dogName"></h2>
+        <img id="dogImage" src="" alt="Dog Image">
+            <p><strong>Breed:</strong> <span id="dogBreed"></span></p>
+            <p><strong>Age:</strong> <span id="dogAge"></span></p>
+            <p><strong>Description:</strong> <span id="dogDescription"></span></p>
+        <a href="adoption-confirm.html" class="button" onclick="adopt()"><strong>ADOPT</strong></a>
+        </div>
+    </main>
+    <footer>
+        <p>Contact Information:petdogs@houseofpaws.com</p>
+        <p>Follow Us</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            const dogDetails = JSON.parse(localStorage.getItem('dogDetails'));
+            if (dogDetails) {
+                document.getElementById('dogName').innerText = dogDetails.name;
+                document.getElementById('dogImage').src = dogDetails.image;
+                document.getElementById('dogBreed').innerText = dogDetails.breed;
+                document.getElementById('dogAge').innerText = dogDetails.age;
+                document.getElementById('dogDescription').innerText = dogDetails.description;
+            }
+        });
+    </script>
+</body>
+</html>

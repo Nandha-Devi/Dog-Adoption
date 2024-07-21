@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Of Paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>House Of Paws</h1>
+        <nav>
+            <a href="index.html">Home |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="aboutus.html">AboutUs |</a>
+         
+        </nav>
+    </header>
+    <main>
+      <h3>Contact Us</h3>  
+      <form id="contactform" onsubmit="submitContact(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email"  id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" row="4"></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <section>
+        <p>For more information about  adoption process,volunteer opportunities,or to make a donation,please contact us at petdogs@houseofpaws.com or 9864532920.</p>
+        <button onclick="returnToHome()">Return to Home</button>
+      </section>
+    </main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>Contact Information:petdogs@houseofpaws.com</p>
+        <p>Follow Us</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

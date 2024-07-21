@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Of Paws</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>House Of Paws</h1>
+        <nav>
+            <a href="index.html">Home |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="aboutus.html">AboutUs |</a>
+        </nav>
+    </header>
+    <main id="dog-lists">
+        <input type="text" id="search-bar" placeholder="Search" oninput="searchDogs()">
+        <div class="dog-lists">
+        <div class="dog-types" id="pet1">
+            <img src="./pet1.jpeg" alt="pet1">
+            <h4>Pet 1</h4>
+            <p>Breed:Labrador</p>
+            <p>Age:2 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet1')">View More</a>
+        </div>
+        <div class="dog-types">
+            <img src="pet02.jpg" alt="pet2">
+            <h4>Pet 2</h4>
+            <p>Breed:American Bully</p>
+            <p>Age:4 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet2')">View More</a>
+        </div>
+        <div class="dog-types">
+            <img src="pet03.jpg" alt="pet3">
+            <h4>Pet 3</h4>
+            <p>Breed:Chow Chow</p>
+            <p>Age:2 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet3')">View More</a>
+        </div>
+        <div class="dog-types">
+            <img src="pet04.jpg" alt="pet4">
+            <h4>Pet 4</h4>
+            <p>Breed:Pug</p>
+            <p>Age:3 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet4')">View More</a>
+        </div>
+        <div class="dog-types">
+            <img src="pet05.jpg" alt="pet5">
+            <h4>Pet 5</h4>
+            <p>Breed:Dalmatian</p>
+            <p>Age:2 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet5')">View More</a>
+        </div>
+        <div class="dog-types">
+            <img src="pet06.jpg" alt="pet6">
+            <h4>Pet 6</h4>
+            <p>Breed:Kombai</p>
+            <p>Age:4 years</p>
+            <a href="dog-details.html" onclick="viewMore('pet6')">View More</a>
+        </div>
+</main>
+    <footer>
+        <p>Contact Information:petdogs@houseofpaws.com</p>
+        <p>Follow Us</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
